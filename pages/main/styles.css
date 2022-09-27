@@ -248,4 +248,115 @@ body {
   font-weight: 300;
   line-height: 120%; }
 
+.friend-section {
+  min-height: 1004px;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
+  padding-top: 69px;
+  box-sizing: border-box; }
+
+.friend-container {
+  height: 835px;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px; }
+
+.friend-text-block {
+  padding-left: 99px;
+  padding-top: 41px;
+  font-family: r-regular; }
+
+.friend-h2 {
+  text-align: center;
+  color: #fe9013;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  margin: 0; }
+
+.friend-h3 {
+  color: #333b41;
+  font-size: 36px;
+  line-height: 130%;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px; }
+
+.friend-h4 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 400;
+  margin-top: 30px; }
+
+.friend-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  margin-top: 10px;
+  max-width: 863px; }
+
+.friend-p-bold {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  margin-top: 40px; }
+
+.underline {
+  text-decoration: none;
+  position: relative; }
+
+.underline:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fe9013; }
+
+.friend-works-block {
+  font-family: r-regular;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.payment-cards {
+  display: flex;
+  gap: 30px;
+  max-width: 764px;
+  justify-content: space-between; }
+
+.payment-card {
+  width: 168px;
+  height: 244px; }
+
+.icon-block {
+  width: 168px;
+  height: 168px;
+  background-color: #ffffff;
+  border: 1px solid #fe9013;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.payment-card-title {
+  font-family: r-regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #333b41;
+  margin-top: 30px; }
+
+.payment-arrow {
+  width: 69px;
+  margin-top: -65px; }
+
+.friend-button {
+  margin-top: 60px; }
+
 /*# sourceMappingURL=styles.css.map */
