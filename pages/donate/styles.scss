@@ -183,7 +183,7 @@ body {
 // --------------------------donate
 
 .donate-section {
-  min-height: 1333px;
+  min-height: 1470px;
   background: $orange-grad;
 }
 
@@ -224,7 +224,7 @@ body {
   background: rgba(255, 255, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
-  min-height: 918px;
+  min-height: 964px;
   margin-top: 60px;
   box-sizing: border-box;
   padding: 40px 92px 62px 92px;
@@ -234,6 +234,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 862px;
 }
 
 .friend-title {
@@ -263,7 +264,7 @@ body {
 .animal {
   display: flex;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .food-amount {
@@ -304,6 +305,7 @@ body {
 
 .money {
   font-family: $r-regular;
+  margin-top: 30px;
 }
 
 .money-p {
@@ -313,6 +315,163 @@ body {
 }
 
 .dollar-icon {
+}
+
+.range {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.range-outer {
+  width: 976px;
+  height: 27px;
+  background-color: #404950;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.range-inner-line {
+  width: 100%;
+  height: 2px;
+  background-color: $gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot-block {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -12px;
+  margin-left: -11px;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:last-of-type {
+    margin-right: -11px;
+  }
+}
+
+.yellow-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $yellow;
+  // margin-top: -4px;
+}
+
+.clicked {
+  position: relative;
+}
+
+.clicked::after {
+  position: absolute;
+  content: "";
+  border: 1px solid $orange;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  top: -6px;
+  left: -6px;
+}
+
+.clicked::before {
+  position: absolute;
+  content: "";
+  border: 1px solid $orange;
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  top: -13px;
+  left: -12px;
+}
+
+.numbers {
+  font-family: $r-regular;
+  color: $black-blue;
+}
+
+.numbers-list {
+  list-style: none;
+  display: flex;
+  gap: 68px;
+  padding-left: 0;
+  & li span {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 140%;
+  }
+}
+
+.another-amount {
+  display: flex;
+  flex-direction: column;
+  font-family: $r-regular;
+  margin-top: 50px;
+}
+
+.amount-number {
+  background: transparent;
+  border: 1px solid #929699;
+  width: 268px;
+  height: 54px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  padding-left: 10px;
+}
+
+.input-block {
+  position: relative;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-icon {
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  filter: invert(59%) sepia(5%) saturate(232%) hue-rotate(163deg)
+    brightness(100%) contrast(86%);
+}
+
+.radios {
+  font-family: $r-regular;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 50px;
+
+  & label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.feed-button {
+  margin-top: 31px;
+}
+
+.share-text {
+  margin-top: 30px;
+  font-family: $r-regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: $black-blue;
 }
 
 // -------------------------footer
