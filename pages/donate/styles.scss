@@ -1,3 +1,401 @@
-h1 {
-  color: pink;
+//---------------------base
+
+@font-face {
+  font-family: r-regular;
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+$r-regular: r-regular;
+@font-face {
+  font-family: r-bold;
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
+}
+$r-bold: r-bold;
+@font-face {
+  font-family: r-medium;
+  src: url("../../assets/fonts/Roboto-Medium.ttf");
+}
+$r-medium: r-medium;
+@font-face {
+  font-family: r-light;
+  src: url("../../assets/fonts/Roboto-Light.ttf");
+}
+$r-light: r-light;
+$transition-default: 0.5s ease;
+$green: #4b9200;
+$orange: #fe9013;
+$orange-dark: #e47209;
+$yellow: #ffee2e;
+$orange-grad: linear-gradient(
+    315.75deg,
+    rgba(254, 210, 144, 0.7) 30.06%,
+    #febdab 100.95%,
+    rgba(254, 210, 144, 0.7) 106.36%
+  ),
+  linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  ),
+  linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  );
+$pink-grad: linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  ),
+  linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  );
+$red: #d31414;
+$black-blue: #333b41;
+$gray: #767474;
+$gray-smoky: #ababab;
+$gray-light: #f1f3f2;
+$white-frosted: #f1f3f2;
+$black: #000000;
+$white: #ffffff;
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+// -------------------------components
+
+.button {
+  text-transform: uppercase;
+  background-color: $orange;
+  font-family: $r-medium;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 500;
+  color: $white;
+  border: none;
+  transition: $transition-default;
+
+  &:hover {
+    background-color: $orange-dark;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $green;
+  }
+}
+
+.round-button,
+.button-square {
+  width: 298px;
+  height: 54px;
+  border-radius: 25px;
+}
+
+.button-square {
+  border-radius: 5px;
+}
+
+//------------------------header
+
+.header {
+  background-color: $black;
+  height: 80px;
+  width: 100%;
+}
+
+.header-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  flex: 1;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: 58px;
+
+  padding-left: 63px;
+}
+
+.nav-link,
+.credits {
+  display: block;
+  color: $white;
+  font-family: $r-regular;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  transition: $transition-default;
+  &:hover {
+    color: $orange;
+    cursor: pointer;
+  }
+}
+
+.active-link {
+  color: $orange;
+}
+
+.logo {
+  &:hover {
+    filter: invert(61%) sepia(22%) saturate(2347%) hue-rotate(350deg)
+      brightness(101%) contrast(99%);
+  }
+}
+
+// -------------------------intro section
+
+.intro-section {
+  background-image: url("../../assets/images/panda-intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 390px;
+}
+
+// --------------------------donate
+
+.donate-section {
+  min-height: 1333px;
+  background: $orange-grad;
+}
+
+.donate-container {
+}
+
+.donation-text {
+  font-family: $r-regular;
+}
+
+.help-h2,
+.donation-h2 {
+  color: $white;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  margin: 0;
+}
+
+.help-h2 {
+  // max-width: 778px;
+  padding-top: 40px;
+}
+
+.donation-desc {
+  color: $white;
+  max-width: 1145px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.donation-h2 {
+  color: $orange;
+  margin-top: 40px;
+}
+
+.friend-block {
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  min-height: 918px;
+  margin-top: 60px;
+  box-sizing: border-box;
+  padding: 40px 92px 62px 92px;
+}
+
+.friend-title {
+  font-family: $r-regular;
+  text-align: center;
+}
+
+.donate-h1 {
+  color: $orange;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.title-text {
+  font-size: 24px;
+  color: $black-blue;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+  padding-top: 20px;
+  text-align: left;
+}
+
+// -------------------------footer
+
+.footer {
+  min-height: 443px;
+  background-color: #111115;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  margin-top: 41px;
+}
+
+.socials-list {
+  margin-top: 44px;
+  padding-left: 0;
+  list-style: none;
+  & li {
+    margin-bottom: 10px;
+  }
+}
+
+.icon-circle {
+  background-color: $gray;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.socials-link {
+  text-decoration: none;
+  font-family: $r-regular;
+  color: $white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  transition: $transition-default;
+  &:hover {
+    color: $orange;
+  }
+}
+
+.donate-button {
+  margin-top: 68px;
+}
+
+.center {
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-list-footer {
+  padding: 0;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subscribe {
+  justify-self: flex-start;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  font-family: $r-regular;
+}
+
+.subscribe-h3 {
+  color: $white;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 14px;
+  margin-top: 40px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.submit-button {
+  width: 129px;
+  height: 42px;
+  border: 1px solid $black-blue;
+  background-color: $gray-light;
+  color: $black;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: $r-light;
+
+  &:active {
+    border-color: $green;
+    color: $green;
+  }
+
+  &:hover {
+    background-color: $gray-light;
+  }
+}
+
+.form-mistake {
+  border-color: $red;
+  color: $red;
+}
+.subscribe-input {
+  background: transparent;
+  border-style: none;
+  border: 1px solid $orange;
+  width: 228px;
+  height: 42px;
+  font-family: $r-light;
+  font-size: 16px;
+  line-height: 140%;
+  color: #bdbdbd;
+  font-weight: 700;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.designed-by {
+  align-self: flex-end;
+  font-family: $r-light;
+  color: $white;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 130%;
+  & p {
+    margin-bottom: 10px;
+  }
 }

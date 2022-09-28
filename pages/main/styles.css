@@ -309,6 +309,10 @@ body {
   line-height: 130%;
   margin-top: 40px; }
 
+.fund-link {
+  text-decoration: none;
+  color: #000000; }
+
 .underline {
   text-decoration: none;
   position: relative; }
