@@ -230,6 +230,12 @@ body {
   padding: 40px 92px 62px 92px;
 }
 
+.friend-inner-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .friend-title {
   font-family: $r-regular;
   text-align: center;
@@ -252,6 +258,61 @@ body {
   margin: 0;
   padding-top: 20px;
   text-align: left;
+}
+
+.animal {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.food-amount {
+  font-family: $r-regular;
+  color: $black-blue;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 11px;
+  & p {
+    margin: 0;
+  }
+  margin-top: 30px;
+}
+
+.food-number {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+}
+
+.food-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.cross-icon {
+  width: 14px;
+  height: 14px;
+  margin-left: 11px;
+}
+
+.animal-icon {
+  width: 284px;
+  margin-left: 64px;
+}
+
+.money {
+  font-family: $r-regular;
+}
+
+.money-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.dollar-icon {
 }
 
 // -------------------------footer
