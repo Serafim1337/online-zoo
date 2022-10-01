@@ -674,7 +674,8 @@ body {
     width: 330px; } }
 @media (max-width: 1490px) {
   .info-section {
-    min-height: 1780px; }
+    min-height: 1780px;
+    overflow: hidden; }
 
   .backstage-flower-bot-l {
     width: 180px; }
