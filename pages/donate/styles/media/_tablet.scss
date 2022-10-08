@@ -3,6 +3,11 @@
 @media (max-width: 980px) {
   .container {
     max-width: 600px;
+    margin: 0 auto;
+  }
+  .header {
+    position: fixed;
+    z-index: 90;
   }
   .nav-header {
     display: none;
@@ -15,6 +20,10 @@
   }
   .header-container {
     justify-content: space-between;
+    padding: 0 30px;
+  }
+  .intro-section {
+    padding-top: 70px;
   }
   .donate-section {
     min-height: 1460px;
