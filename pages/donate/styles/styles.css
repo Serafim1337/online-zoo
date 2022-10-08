@@ -374,6 +374,10 @@ body {
   font-size: 16px;
   line-height: 140%;
   padding-left: 10px; }
+  .amount-number:focus {
+    outline: none;
+    border-color: #4b9200;
+    color: #4b9200; }
 
 .input-block {
   position: relative; }

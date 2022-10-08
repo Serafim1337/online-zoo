@@ -103,6 +103,18 @@
   transform: rotate(180deg);
 }
 
+.slider-wrapper {
+  width: 1160px;
+  overflow: hidden;
+  height: 874px;
+}
+
+.slider {
+  display: flex;
+  transition: ease 1s;
+  gap: 50px;
+}
+
 .animals-cards {
   display: grid;
   grid-template-columns: repeat(3, 366px);

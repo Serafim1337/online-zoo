@@ -31,8 +31,13 @@
   width: 62px;
   height: 62px;
   position: absolute;
+  z-index: 80;
 }
 
 .button-square {
   border-radius: 5px;
+}
+
+.arrow-button:disabled {
+  background-color: $gray;
 }
