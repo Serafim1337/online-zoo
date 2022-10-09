@@ -1,5 +1,6 @@
 const testimonialBlock = document.querySelector(".testimonials-section");
 const cardsSection = document.querySelector(".testimonials-cards");
+let isPopupCreated = false;
 
 cardsSection.addEventListener("click", function (e) {
   if (!e.target.closest(".testimonial-card")) return;
@@ -10,8 +11,10 @@ cardsSection.addEventListener("click", function (e) {
 
 overlay.addEventListener("click", function (e) {
   if (!e.target.closest(".popup-card")) {
-    toggleOverlay();
-    togglePopup(document.querySelector(".popup-card"));
+    if (isPopupCreated) {
+      toggleOverlay();
+      togglePopup(document.querySelector(".popup-card"));
+    }
   }
 });
 
@@ -21,6 +24,7 @@ function toggleOverlay() {
 }
 
 function togglePopup(card) {
+  isPopupCreated = !isPopupCreated;
   card.classList.toggle("popup-card");
   if (card.classList.contains("popup-card")) {
     overlay.before(card);

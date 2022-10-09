@@ -8,10 +8,12 @@ const dropdownLogo = dropdownMenu.querySelector(".dropdown-logo");
 burgerMenu.addEventListener("click", burgerMenuHandler);
 
 function burgerMenuHandler() {
-  burgerMenu.classList.toggle("cross");
-  body.classList.toggle("lock");
-  overlay.hidden = !overlay.hidden;
-  dropdownMenu.hidden = !dropdownMenu.hidden;
+  if (!isPopupCreated) {
+    burgerMenu.classList.toggle("cross");
+    body.classList.toggle("lock");
+    overlay.hidden = !overlay.hidden;
+    dropdownMenu.hidden = !dropdownMenu.hidden;
+  }
 }
 
 overlay.addEventListener("click", function (e) {
