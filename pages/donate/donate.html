@@ -117,28 +117,28 @@
                   <div class="range-outer">
                     <div class="range-inner-line">
                       <div class="dot-block">
-                        <div class="yellow-dot clicked"></div>
+                        <div class="yellow-dot" data-value="5000"></div>
                       </div>
                       <div class="dot-block big-range">
-                        <div class="yellow-dot"></div>
+                        <div class="yellow-dot" data-value="2000"></div>
                       </div>
                       <div class="dot-block big-range">
-                        <div class="yellow-dot"></div>
+                        <div class="yellow-dot" data-value="1000"></div>
                       </div>
                       <div class="dot-block big-range">
-                        <div class="yellow-dot"></div>
+                        <div class="yellow-dot" data-value="500"></div>
                       </div>
                       <div class="dot-block">
-                        <div class="yellow-dot"></div>
+                        <div class="yellow-dot" data-value="250"></div>
                       </div>
                       <div class="dot-block">
-                        <div class="yellow-dot"></div>
+                        <div class="yellow-dot clicked" data-value="100"></div>
                       </div>
                       <div class="dot-block">
-                        <div class="yellow-dot"></div>
+                        <div class="yellow-dot" data-value="50"></div>
                       </div>
                       <div class="dot-block">
-                        <div class="yellow-dot"></div>
+                        <div class="yellow-dot" data-value="25"></div>
                       </div>
                     </div>
                   </div>
@@ -223,6 +223,9 @@
                     type="number"
                     class="amount-number"
                     placeholder="Another amount"
+                    value="100"
+                    min="1"
+                    max="9999"
                   />
                 </div>
                 <div class="radios">
@@ -349,6 +352,7 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="dropdownMenu.js"></script>
+    <script src="paymentHandler.js"></script>
   </body>
 </html>
