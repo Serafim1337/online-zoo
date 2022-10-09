@@ -18,7 +18,10 @@ overlay.addEventListener("click", function (e) {
   switch (e.currentTarget) {
     case overlay:
     case burgerMenu:
-      burgerMenuHandler();
+      if (!dropdownMenu.hidden) {
+        burgerMenuHandler();
+      }
+
       break;
   }
 });
